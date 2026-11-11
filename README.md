@@ -10,6 +10,8 @@
        A R C H I T E C T
 ```
 
+<img src="assets/noctis-banner.svg" width="100%" alt="Noctis Architect">
+
 ### Architecting digital ecosystems — from low-level hardware signals to high-level AI integrations.
 
 [![Telegram](https://img.shields.io/badge/Telegram-Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Noctis_Architect)
@@ -23,7 +25,7 @@
 
 I don't build apps. I build **infrastructure** — layered, purposeful systems where every component, from a Raspberry Pi GPIO pin to an LLM API call, is a deliberate architectural decision.
 
-My work spans the full vertical: embedded hardware prototyping with ESP32, backend systems deeply integrated with WordPress/WooCommerce internals, mobile-native Flutter apps, and AI pipelines that automate what humans shouldn't have to do manually. I run **Debian Linux (XFCE)** as my daily driver — not for aesthetics, but because ownership of the environment is non-negotiable.
+My work spans the full vertical: backend systems deeply integrated with WordPress/WooCommerce internals, mobile-native Flutter apps, and AI pipelines that automate what humans shouldn't have to do manually. I run **Debian Linux (XFCE)** as my daily driver — not for aesthetics, but because ownership of the environment is non-negotiable.
 
 Current obsessions:
 - Building LLM-powered automation layers on top of real business workflows
