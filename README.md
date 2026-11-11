@@ -10,14 +10,7 @@
        A R C H I T E C T
 ```
 
-<img src="noctis-banner.svg" width="100%" alt="Noctis Architect">
 
-### Architecting digital ecosystems — from low-level hardware signals to high-level AI integrations.
-
-[![Telegram](https://img.shields.io/badge/Telegram-Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Noctis_Architect)
-[![GitHub](https://img.shields.io/badge/GitHub-Noctis--Architect-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Noctis-Architect)
-
-</div>
 
 ---
 
