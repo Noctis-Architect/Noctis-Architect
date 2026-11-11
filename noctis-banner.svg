@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Noctis Architect — from hardware signals to AI">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05060f"/>
+      <stop offset="0.6" stop-color="#0b1030"/>
+      <stop offset="1" stop-color="#1a1442"/>
+    </linearGradient>
+
+    <linearGradient id="title" gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="450" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#7aa2ff"/>
+      <stop offset="0.5" stop-color="#e9ecff"/>
+      <stop offset="1" stop-color="#b57bff"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="400 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+
+    <mask id="crescent">
+      <rect width="100" height="100" x="-50" y="-50" fill="#fff"/>
+      <circle cx="11" cy="-5" r="22" fill="#000"/>
+    </mask>
+
+    <clipPath id="reveal">
+      <rect x="0" y="60" width="0" height="140">
+        <animate attributeName="width" from="0" to="1000" dur="1.8s" begin="0.3s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="340" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#cfd6ff">
+    <circle cx="60" cy="40" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="95" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="230" cy="30" r="1.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="310" cy="70" r="1"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="400" cy="25" r="1.2"><animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="38" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="610" cy="82" r="1.4"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="30" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="95" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="55" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="935" cy="105" r="1.3"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="110" cy="150" r="1"><animate attributeName="opacity" values="0.8;0.1;0.8" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="890" cy="170" r="1"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.7s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- moon -->
+  <g transform="translate(900 62)">
+    <circle r="34" fill="#8fa2ff" opacity="0.35" filter="url(#softglow)">
+      <animate attributeName="opacity" values="0.25;0.5;0.25" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="26" fill="#eef0ff" mask="url(#crescent)"/>
+  </g>
+
+  <!-- shooting star -->
+  <g opacity="0">
+    <line x1="0" y1="0" x2="-70" y2="-28" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+    <circle r="2" fill="#fff"/>
+    <animateTransform attributeName="transform" type="translate" values="760 40; 360 200" keyTimes="0;1" dur="9s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.04;0.14;1" dur="9s" begin="2s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- circuit traces (left: hardware) -->
+  <g fill="none" stroke="#3a4cae" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 10">
+    <path d="M0,120 H70 L100,150 H190">
+      <animate attributeName="stroke-dashoffset" from="64" to="0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,170 H50 L80,200 H150 L170,220 H230">
+      <animate attributeName="stroke-dashoffset" from="64" to="0" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,70 H40 L70,100 H120">
+      <animate attributeName="stroke-dashoffset" from="64" to="0" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#0b1030" stroke="#5b73ff" stroke-width="1.5">
+    <circle cx="190" cy="150" r="3.5"/>
+    <circle cx="230" cy="220" r="3.5"/>
+    <circle cx="120" cy="100" r="3.5"/>
+  </g>
+
+  <!-- neural mesh (right: AI) -->
+  <g stroke="#6b3fd1" stroke-width="1" opacity="0.7">
+    <line x1="790" y1="130" x2="850" y2="110"/>
+    <line x1="790" y1="130" x2="850" y2="170"/>
+    <line x1="790" y1="200" x2="850" y2="170"/>
+    <line x1="790" y1="200" x2="850" y2="230"/>
+    <line x1="850" y1="110" x2="930" y2="140"/>
+    <line x1="850" y1="170" x2="930" y2="140"/>
+    <line x1="850" y1="170" x2="930" y2="210"/>
+    <line x1="850" y1="230" x2="930" y2="210"/>
+  </g>
+  <g fill="#b57bff">
+    <circle cx="790" cy="130" r="4"><animate attributeName="r" values="3;5;3" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="790" cy="200" r="4"><animate attributeName="r" values="4;3;5;4" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="110" r="4"><animate attributeName="r" values="3;5;3" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="170" r="4"><animate attributeName="r" values="5;3;5" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="230" r="4"><animate attributeName="r" values="3;5;3" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="140" r="4"><animate attributeName="r" values="4;5;3;4" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="210" r="4"><animate attributeName="r" values="3;5;3" dur="3.1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- title -->
+  <g clip-path="url(#reveal)" font-family="'Courier New','DejaVu Sans Mono',Menlo,monospace" text-anchor="middle">
+    <text x="500" y="140" font-size="86" font-weight="bold" letter-spacing="16" fill="url(#title)" filter="url(#glow)">NOCTIS</text>
+    <text x="500" y="182" font-size="22" letter-spacing="20" fill="#8b93c9">ARCHITECT</text>
+  </g>
+
+  <!-- pipeline: hardware -> AI -->
+  <g>
+    <line x1="130" y1="266" x2="870" y2="266" stroke="#2a3370" stroke-width="2"/>
+    <line x1="130" y1="266" x2="870" y2="266" stroke="#7aa2ff" stroke-width="2" stroke-dasharray="4 12">
+      <animate attributeName="stroke-dashoffset" from="32" to="0" dur="1.2s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- nodes -->
+    <g fill="#0b1030" stroke="#7aa2ff" stroke-width="2">
+      <circle cx="130" cy="266" r="9"/>
+      <circle cx="315" cy="266" r="9"/>
+      <circle cx="500" cy="266" r="9"/>
+      <circle cx="685" cy="266" r="9"/>
+      <circle cx="870" cy="266" r="9" stroke="#b57bff"/>
+    </g>
+
+    <!-- pulse rings, one per node, timed to the travelling packet (6s loop) -->
+    <g fill="none" stroke="#9fb6ff" stroke-width="2">
+      <circle cx="130" cy="266" r="9" opacity="0"><animate attributeName="r" values="9;26;26" keyTimes="0;0.2;1" dur="6s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0;0" keyTimes="0;0.2;1" dur="6s" begin="0s" repeatCount="indefinite"/></circle>
+      <circle cx="315" cy="266" r="9" opacity="0"><animate attributeName="r" values="9;26;26" keyTimes="0;0.2;1" dur="6s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0;0" keyTimes="0;0.2;1" dur="6s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="500" cy="266" r="9" opacity="0"><animate attributeName="r" values="9;26;26" keyTimes="0;0.2;1" dur="6s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0;0" keyTimes="0;0.2;1" dur="6s" begin="3s" repeatCount="indefinite"/></circle>
+      <circle cx="685" cy="266" r="9" opacity="0"><animate attributeName="r" values="9;26;26" keyTimes="0;0.2;1" dur="6s" begin="4.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0;0" keyTimes="0;0.2;1" dur="6s" begin="4.5s" repeatCount="indefinite"/></circle>
+      <circle cx="870" cy="266" r="9" stroke="#c99bff" opacity="0"><animate attributeName="r" values="9;30;30" keyTimes="0;0.2;1" dur="6s" begin="5.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0;0" keyTimes="0;0.2;1" dur="6s" begin="5.9s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- travelling packet -->
+    <circle r="6" fill="#fff" filter="url(#glow)">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M130,266 L870,266"/>
+    </circle>
+
+    <!-- labels -->
+    <g font-family="'Courier New','DejaVu Sans Mono',Menlo,monospace" font-size="13" fill="#9aa3d6" text-anchor="middle" letter-spacing="2">
+      <text x="130" y="304">GPIO</text>
+      <text x="315" y="304">PYTHON</text>
+      <text x="500" y="304">PHP · SQL</text>
+      <text x="685" y="304">FLUTTER</text>
+      <text x="870" y="304" fill="#c3a2ff">LLM</text>
+    </g>
+  </g>
+</svg>
