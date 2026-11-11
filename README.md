@@ -10,7 +10,7 @@
        A R C H I T E C T
 ```
 
-<img src="assets/noctis-banner.svg" width="100%" alt="Noctis Architect">
+<img src="noctis-banner.svg" width="100%" alt="Noctis Architect">
 
 ### Architecting digital ecosystems — from low-level hardware signals to high-level AI integrations.
 
